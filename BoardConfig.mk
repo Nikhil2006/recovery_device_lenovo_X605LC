@@ -66,8 +66,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := hq_sdm450_defconfig
-TARGET_KERNEL_SOURCE := kernel/lenovo/hq_sdm450
+#TARGET_KERNEL_CONFIG := X605LC_defconfig
+#TARGET_KERNEL_SOURCE := kernel/lenovo/X605LC
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -102,7 +102,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := /vendor/dsp:/dsp /vendor/firmware_mnt:/firmware
 
 # decryption
 TW_INCLUDE_CRYPTO := true
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 PLATFORM_SECURITY_PATCH := 2099-12-31
 
